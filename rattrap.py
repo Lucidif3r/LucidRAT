@@ -29,4 +29,4 @@ password = configuration.get("PASSWORD")
 for i in range(1, 256):
     ip = f'{address}{i}'
     print(f'[*] Trying {ip}')
-    os.system(f'sshpass -p \"{password}\" ssh -o ConnectTimeout=3 onlyrat@{ip}')
+    os.system(f'sshpass -p \"{password}\" ssh -o ConnectTimeout=3 lucidrat@{ip}')
