@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# find luicdrat devices on the network
+# find lucidrat devices on the network
 # created by : Lucidif3r
 
 # imports
