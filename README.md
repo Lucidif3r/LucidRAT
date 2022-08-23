@@ -49,7 +49,7 @@ Once installed we will have remote administrative access to our target. We can c
 **Attacker Installation**
 - install lucid rat by cloning this repository
 ```bash
- git clone https://Lucidif3r@bitbucket.org/lucidif3r/lucidrat.git
+git clone https://github.com/Lucidif3r/LucidRAT.git
 ```
 - install dependencies for lucidRAT
 - **YES**, the lucidRAT directory **is** supposed to disappear
