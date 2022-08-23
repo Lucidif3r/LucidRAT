@@ -7,7 +7,7 @@ cd ~
 rm -rf .LucidRAT
 
 # install new version
-git clone https://Lucidif3r@bitbucket.org/lucidif3r/lucidrat.git
+git clone https://github.com/Lucidif3r/LucidRAT.git
 
 # install dependencies
 cd LucidRAT
